@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First App With VueJS</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <! 😀
+        First App With Vuejs
+        - Note : 
+         + v-model dùng để binding data kết nối giá trị nhập vào để thay cho giá trị ban đẩu của ⌨
+        + v-on:event để dùng để thực hiện các event trong javscript như click-change
+        v-on có thể thay bằng @
+        + v-for để lặp và render các phần tử trong giá trị ở các mảng trong data vue
+        v-for có thể truyền vào index như (goal,index) in goals
+        sử dụng vòng lặp for-in để in ra các giá tri như bên dưới
+        + v-bind để bind dữ liệu  các attribute lạ như href có link action value v.v.
+        v-bind cũng có thể thay bằng dấu  : 
+        + v-html để render html code với kiểu string
+        + để khóa dữ liệu lại không cho thay đổi thì dùng v-once chỉ render 1 lần
+        ->
+    <div id="app">
+        <label for="goal">Goal</label>
+        <input type="text" id="goal" v-model="enteredValue">
+        <button v-on:click="addGoal">Add Goal</button>
+        <ul>
+
+            <li v-for="goal in goals">{{goal}}</li>
+        </ul>
+    </div>
+   
+
+</body>
+
+<script src="app.js">
+
+
+</script>
+</html>
