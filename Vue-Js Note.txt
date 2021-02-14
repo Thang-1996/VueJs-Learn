@@ -1,0 +1,10 @@
+ VueJS note : 
+
+- First App Create : 
+các bước create component
+
+- template: nơi chứa code html
+
+- script nơi chứa code script
+
+- style nơi chứa css code
